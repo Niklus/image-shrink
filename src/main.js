@@ -29,7 +29,6 @@ function createMainWindow() {
     webPreferences: {
       nodeIntegration: true
     }
-
   })
 
   if (isDev) {
@@ -51,7 +50,6 @@ function createAboutWindow() {
   })
   aboutWindow.loadFile(`${__dirname}/app/about.html`);
 }
-
 
 app.on('ready', () => {
   createMainWindow()
